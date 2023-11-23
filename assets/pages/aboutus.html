@@ -71,8 +71,24 @@
                     <p class="lead text about-text">Welcome to Bloom & Boom - the flower shop where we offer a wide selection of flowers for unforgettable impressions.</p>
                     <br>
                     <p class="lead text about-text">With our range of fresh and exquisite flowers, we will help you express your emotions, create an atmosphere of joy, and impress your loved ones.</p>
-                    <a href="" class="about-btn">Read more</a>
+                    <div class="ttip">Read more
+                        <span class="ttiptext">Not available now</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="container">
+            <div class="work-title">Dive into our work</div>
+            <div class="work-inner">
+                <video width="500px" controls id="myvideo">
+                    <source src="../videoscreen.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="work-btn" onclick="openFullscreen();">Open Video in Fullscreen Mode</button>
+                <a href="games.html" class="games-link">Also you can play our mini games</a>
             </div>
         </div>
     </section>
@@ -138,11 +154,16 @@
                     <div class="footer-text">Astana, Kazakhstan</div>
                     <div class="footer-text">bloomboom@gmail.com</div>
                 </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/erk1nqz" target="_blank"><img src="/assets/img/instagram.png" alt="instagram" width="24" height="24"></a>
+                    <a href="https://t.me/zhureee3eem" target="_blank"><img src="/assets/img/vk.png" alt="instagram" width="24" height="24"></a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../js/scrollTop.js"></script>
+    <script src="../js/fullScreen.js"></script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+.game {
+    padding-top: 30px;
+    height: 90vh;
+}
+
+.game-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.games-title {
+    text-align: center;
+    font-size: 70px;
+    color: var(--color1);
+    font-family: var(--ff-cormorant);
+    font-weight: 600;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+.games {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.games-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-name {
+    color: #eec669;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.game-text {
+    color: var(--color1);
+}
+
+.game-btn {
+    color: var(--color1);
+    border: 1px solid var(--color1);
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: color .1s linear, background-color .2s linear;
+}
+
+.game-btn:hover {
+    color: var(--color4);
+    background-color: var(--color1);
+}
+
+
+
+/*  QUIZ  */
+.quiz {
+    height: 240vh;
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.question input {
+    margin-left: 40px;
+}
+
+.quiz-option {
+    color: var(--color1);
+}
+
+.quiz-btn {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--color1);
+}
+
+
+
+/*  PUZZLE  */
+.puzzle {
+    height: 100vh;
+}
+
+.puzzle-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#puzzle-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+ 
+#puzzle-container h2 {
+    text-align: center;
+}
+ 
+#puzzle-container .puzzle-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+ 
+#puzzle-container .puzzle-piece {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}

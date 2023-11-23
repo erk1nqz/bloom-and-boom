@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>BLOOM&BOOM</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/7895b2/up--v1.png" alt="up--v1"/></button>
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
             <a href="../../index.html" class="navbar-brand">BLOOM&BOOM</a>
@@ -38,6 +40,97 @@
         </div> 
     </nav>
 
+
+    <section class="order">
+        <div class="container">
+            <div class="order-inner">
+                <div class="order-block">
+                    <div class="order-title">Order</div>
+                    <form id="orderForm">
+                        <div class="tab">Your contacts:
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Your name">
+                                <label for="floatingInput">Your name</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Your number">
+                                <label for="floatingInput">Your number</label>
+                            </div>
+                        </div>
+                        <div class="tab">Your contacts:
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select bouquet</option>
+                                <option value="1">Starry night</option>
+                                <option value="2">Sun lover</option>
+                                <option value="3">Spring dream</option>
+                                <option value="3">Ardent lover</option>
+                                <option value="3">Playful tenderness</option>
+                                <option value="3">Pink sunset</option>
+                              </select>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Your number">
+                                <label for="floatingInput">Your address</label>
+                            </div>
+                        </div>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                                <button type="button" id="prevBtn" class="btn btn-dark bs-button" onclick="nextPrev(-1)">Previous</button>
+                                <button type="button" id="nextBtn" class="btn btn-primary bs-button" onclick="nextPrev(1)">Next</button>
+                            </div>
+                        </div>
+                        <div style="text-align:center;margin-top:40px;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-block">
+                    <div class="order-title">Q/A</div>
+                    <div class="accordion">
+                        <div class="container">
+                            <button class="accordion-item">How long will it take to collect and deliver a bouquet?</button>
+                            <div class="panel">
+                                <p class="panel-text"> - The assembly and delivery of bouquets takes a different amount of time and depends on the size of the bouquet and the address of the client's residence. But we try to do everything quickly, so everything takes an average of 1-1.5 hours.</p>
+                            </div>
+                
+                            <button class="accordion-item">Do you offer the option to create a custom bouquets or arrangements?</button>
+                            <div class="panel">
+                                <p class="panel-text"> - Yes, we are always ready to meet the customer halfway.</p>
+                            </div>
+                
+                            <button class="accordion-item">Are your bouquets tenacious?</button>
+                            <div class="panel">
+                                <p class="panel-text"> - Bouquets collected by us "live" for a very long time, as the delivery of flowers takes place every day!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts-inner">
+                <div class="contacts-block">
+                    <div class="contacts-title">Contacts</div>
+                    <p class="text">Address</p>
+                    <p class="text contacts-text">Mangilik El St. 52a</p>
+                    <p class="text contacts-text">Astana, Kazakhstan</p>
+                    <p>Working Hours</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">mon - thurs: 09.00 - 19.00</li>
+                        <li class="list-group-item">fri: 9.00 - 22.00</li>
+                        <li class="list-group-item">sat - sun: 10.00 - 00.00</li>
+                    </ul>
+                </div>
+                <div class="contacts-block">
+                    <img src="../img/map.png" alt="map">
+                </div>
+            </div>
+        </div>
+    </section>
     
 
     <footer>
@@ -45,10 +138,10 @@
             <div class="footer-top">
                 <a href="index.html" class="footer-brand">BLOOM&BOOM</a>
                 <div class="footer-links">
-                    <a href="" class="footer-link">Home</a>
-                    <a href="" class="footer-link">Catalog</a>
-                    <a href="" class="footer-link">About us</a>
-                    <a href="" class="footer-link">Contacts</a>
+                    <a href="../../index.html" class="footer-link">Home</a>
+                    <a href="catalog.html" class="footer-link">Catalog</a>
+                    <a href="aboutus.html" class="footer-link">About us</a>
+                    <a href="contacts.html" class="footer-link">Contacts</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -57,8 +150,17 @@
                     <div class="footer-text">Astana, Kazakhstan</div>
                     <div class="footer-text">bloomboom@gmail.com</div>
                 </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/erk1nqz" target="_blank"><img src="/assets/img/instagram.png" alt="instagram" width="24" height="24"></a>
+                    <a href="https://t.me/zhureee3eem" target="_blank"><img src="/assets/img/vk.png" alt="instagram" width="24" height="24"></a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../js/scrollTop.js"></script>
+    <script src="../js/multipleSteps.js"></script>
+    <script src="../js/accordion.js"></script>
 </body>
 </html>

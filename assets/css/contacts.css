@@ -1,0 +1,139 @@
+.order {
+    padding-top: 120px;
+    height: 90vh;
+    background-color: var(--color4);
+}
+
+.order-inner {
+    display: flex;
+}
+
+.order-block {
+    width: 50%;
+}
+
+.order-title {
+    color: var(--color1);
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--ff-cormorant);
+    margin-bottom: 30px;
+}
+
+/*  FORM  */
+#orderForm {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.tab {
+    display: none;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+
+
+/*  ACCORDION  */
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: var(--color4);
+    color: var(--color2);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+  
+.active, .accordion-item:hover {
+}
+  
+.accordion-item:after {
+    content: '\002B';
+    color: var(--color2);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.panel {
+    padding: 5px 18px 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel-text {
+    color: var(--color1);
+}
+
+
+
+/*  CONTACTS  */
+.contacts {
+    padding-top: 50px;
+    height: 70vh;
+    background-color: var(--color1);
+}
+
+.contacts-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contacts-title {
+    color: var(--color4);
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--ff-cormorant);
+    margin-bottom: 30px;
+}
+
+.contacts-text {
+    font-weight: 500;
+    color: #eec669;
+}
+
+.list-group-item {
+    color: #eec669;
+    width: 400px;
+    background-color: var(--color1);
+}
