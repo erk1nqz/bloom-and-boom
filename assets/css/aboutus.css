@@ -1,0 +1,59 @@
+/*  ABOUT US  */
+.aboutus {
+    padding-top: 50px;
+    background-color: var(--color4);
+}
+
+.about-title {
+    color: var(--color1);
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--ff-cormorant);
+    margin-bottom: 30px;
+}
+
+.about-text {
+    color: var(--color1);
+}
+
+.about-btn {
+    text-decoration: underline;
+    color: #ffffff;
+    transition: color .2s linear;
+}
+
+.about-btn:hover {
+    color: rgb(255, 186, 58);
+}
+
+
+/*  REVIEWS  */
+.reviews {
+    padding-top: 40px;
+    background-color: var(--color1);
+    height: 60vh;
+}
+
+.reviews-title {
+    color: var(--color4);
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    text-align: center;
+    font-family: var(--ff-cormorant);
+    margin-bottom: 30px;
+}
+
+.reviews-card {
+    background-color: var(--color4);
+}
+
+.reviews-card-title {
+    color: var(--color1);
+}
+
+.card-text {
+    color: var(--color1);
+}
